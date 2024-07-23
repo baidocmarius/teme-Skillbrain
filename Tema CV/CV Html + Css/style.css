@@ -1,0 +1,75 @@
+:root {
+  --text-blue: #005889;
+  --text-black: #101214;
+  --background-color: #014870;
+  --test: red;
+  --shadow: #00000084;
+  --margin-left: 20px;
+  --margin-bottom: 5px;
+}
+header {
+  justify-content: space-between;
+  padding: 18px;
+}
+
+body {
+  max-width: 1150px;
+  margin: 100px auto 100px auto;
+  background-color: var(--background-color);
+  display: flex;
+}
+/* div-ul exterior ce tine chenarul de text */
+
+.big-box {
+  /* setari cerute de figma, prea mici dimensiunile
+  color: #101214;
+  font-family: Gilroy;
+  font-size: 10px; */
+
+  font-family: Girloy, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fff;
+  /* flex-direction: column; */
+  margin: auto;
+  width: 595px;
+  padding: 48px;
+  border-top: 10px solid var(--text-blue);
+  box-shadow: 0px 0px 10px var(--shadow);
+}
+
+.lista-nume {
+  display: flex;
+  line-height: 0px;
+  row-gap: 10px;
+}
+
+.leader-ship,
+.lista-nume,
+.skills,
+.education,
+.lista-experienta {
+  margin-left: var(--margin-left);
+}
+h2,
+.blue-text-nume,
+.blue-text {
+  color: var(--text-blue);
+}
+h2,
+.blue-text {
+  font-weight: bolder;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+.skills dt,
+dd {
+  margin-bottom: var(--margin-bottom);
+}
+.skills dd {
+  margin-left: 10px;
+}
